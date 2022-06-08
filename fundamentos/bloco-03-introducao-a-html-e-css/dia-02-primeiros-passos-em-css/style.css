@@ -1,0 +1,31 @@
+body {
+  font-size: 16px;
+}
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+}
+ul {
+  background-color: red;
+}
+.turnBlue {
+  background-color: #649cd9;
+}
+.turnYellow {
+  background-color: #ffed9e;
+}
+.turnRed {
+  background-color: #e16071;
+}
+.turnBrown {
+  background-color: #836262;
+}
+p {
+  font-weight: 600;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 80px;
+  font-style: italic;
+}
