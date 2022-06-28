@@ -7,3 +7,9 @@ mainContent.style.backgroundColor = 'rgb(76,164,109';
 
 let middleSquare = document.getElementsByClassName('center-content')[0];
 middleSquare.style.backgroundColor = 'white';
+
+let title = document.getElementsByTagName('h1')[0];
+title.innerText = 'Exercício 5.1 - JavaScript';
+
+let firstParagraph = document.getElementsByTagName('p')[0];
+firstParagraph.innerHTML = firstParagraph.innerHTML.toUpperCase();
