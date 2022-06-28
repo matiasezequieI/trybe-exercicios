@@ -13,3 +13,8 @@ title.innerText = 'Exercício 5.1 - JavaScript';
 
 let firstParagraph = document.getElementsByTagName('p')[0];
 firstParagraph.innerHTML = firstParagraph.innerHTML.toUpperCase();
+
+let allParagraphs = document.getElementsByTagName('p');
+for (let p of allParagraphs) {
+  console.log(p.innerText);
+}
