@@ -11,3 +11,11 @@ let info2 = {
   nota: 'O último MacPatinhas',
   recorrente: 'Sim',
 };
+
+for (key in info) {
+  if (key === 'recorrente' && info[key] === info2[key]) {
+    console.log('ambos sao recorrentes');
+  } else {
+    console.log(`${info[key]} e ${info2[key]}`);
+  }
+}
