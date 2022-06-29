@@ -46,3 +46,9 @@ for (let i = 0; i <= numeros.length; i++) {
   li.innerText = numeros[i];
   ul.appendChild(li);
 }
+
+for (let i = 1; i <= 3; i++) {
+  let h3 = document.createElement('h3');
+  h3.innerText = `Trybe - ${i}`;
+  main.appendChild(h3);
+}
