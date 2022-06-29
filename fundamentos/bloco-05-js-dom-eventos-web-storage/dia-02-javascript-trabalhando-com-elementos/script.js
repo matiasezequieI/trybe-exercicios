@@ -26,3 +26,23 @@ let img = document.createElement('img');
 img.src = 'https://picsum.photos/200';
 img.className = 'small-image';
 leftSection.appendChild(img);
+
+let ul = document.createElement('ul');
+rightSection.appendChild(ul);
+let numeros = [
+  'um',
+  'dois',
+  'três',
+  'quatro',
+  'cinco',
+  'seis',
+  'sete',
+  'oito',
+  'nove',
+  'dez',
+];
+for (let i = 0; i <= numeros.length; i++) {
+  let li = document.createElement('li');
+  li.innerText = numeros[i];
+  ul.appendChild(li);
+}
