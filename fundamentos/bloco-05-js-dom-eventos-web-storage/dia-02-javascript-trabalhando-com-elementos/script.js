@@ -9,3 +9,7 @@ document.body.appendChild(main);
 let section = document.createElement('section');
 section.className = 'center-content';
 main.appendChild(section);
+
+let p = document.createElement('p');
+p.innerText = 'Olá, mundo';
+section.appendChild(p);
