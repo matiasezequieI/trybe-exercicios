@@ -13,3 +13,7 @@ main.appendChild(section);
 let p = document.createElement('p');
 p.innerText = 'Olá, mundo';
 section.appendChild(p);
+
+let leftSection = document.createElement('section');
+leftSection.className = 'left-content';
+main.appendChild(leftSection);
