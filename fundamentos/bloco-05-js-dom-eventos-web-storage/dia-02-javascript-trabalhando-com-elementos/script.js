@@ -62,3 +62,5 @@ for (let i = 0; i < h3.length; i++) {
 }
 
 main.removeChild(leftSection);
+
+rightSection.style.marginRight = 'auto';
