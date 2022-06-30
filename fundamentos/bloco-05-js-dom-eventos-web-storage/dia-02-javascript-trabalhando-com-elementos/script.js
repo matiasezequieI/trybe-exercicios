@@ -41,6 +41,7 @@ let numeros = [
   'nove',
   'dez',
 ];
+
 for (let i = 0; i <= numeros.length; i++) {
   let li = document.createElement('li');
   li.innerText = numeros[i];
@@ -52,3 +53,5 @@ for (let i = 1; i <= 3; i++) {
   h3.innerText = `Trybe - ${i}`;
   main.appendChild(h3);
 }
+
+h1.className = 'title';
