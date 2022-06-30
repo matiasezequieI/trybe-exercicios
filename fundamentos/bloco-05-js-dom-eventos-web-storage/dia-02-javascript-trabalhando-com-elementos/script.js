@@ -60,3 +60,5 @@ let h3 = document.getElementsByTagName('h3');
 for (let i = 0; i < h3.length; i++) {
   h3[i].className = 'description';
 }
+
+main.removeChild(leftSection);
