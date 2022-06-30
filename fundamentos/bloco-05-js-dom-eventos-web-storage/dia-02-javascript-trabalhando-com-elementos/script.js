@@ -55,3 +55,8 @@ for (let i = 1; i <= 3; i++) {
 }
 
 h1.className = 'title';
+
+let h3 = document.getElementsByTagName('h3');
+for (let i = 0; i < h3.length; i++) {
+  h3[i].className = 'description';
+}
