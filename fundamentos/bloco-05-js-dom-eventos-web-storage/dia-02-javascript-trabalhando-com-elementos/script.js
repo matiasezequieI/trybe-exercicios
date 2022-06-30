@@ -42,7 +42,7 @@ let numeros = [
   'dez',
 ];
 
-for (let i = 0; i <= numeros.length; i++) {
+for (let i = 0; i < numeros.length; i++) {
   let li = document.createElement('li');
   li.innerText = numeros[i];
   ul.appendChild(li);
@@ -66,3 +66,7 @@ main.removeChild(leftSection);
 rightSection.style.marginRight = 'auto';
 
 section.style.backgroundColor = 'green';
+
+let selectUl = document.getElementsByTagName('ul')[0];
+selectUl.lastChild.remove();
+selectUl.lastChild.remove();
