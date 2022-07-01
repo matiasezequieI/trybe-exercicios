@@ -27,25 +27,29 @@ let decemberDaysList = [
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
 
-const unorderedDays = document.getElementById('days');
+function createDaysOfTheMonth() {
+  const unorderedDays = document.getElementById('days');
 
-for (let i = 0; i < decemberDaysList.length; i++) {
-  const numberedDay = decemberDaysList[i];
-  const numberedDayListItem = document.createElement('li');
-  numberedDayListItem.classList.add('day');
-  numberedDayListItem.innerText = numberedDay;
-  if (numberedDay === 24 || numberedDay === 25 || numberedDay === 31) {
-    numberedDayListItem.classList.add('holiday');
-  } else if (
-    numberedDay === 4 ||
-    numberedDay === 11 ||
-    numberedDay === 18 ||
-    numberedDay === 25
-  ) {
-    numberedDayListItem.classList.add('friday');
+  for (let i = 0; i < decemberDaysList.length; i++) {
+    const numberedDay = decemberDaysList[i];
+    const numberedDayListItem = document.createElement('li');
+    numberedDayListItem.classList.add('day');
+    numberedDayListItem.innerText = numberedDay;
+    if (numberedDay === 24 || numberedDay === 25 || numberedDay === 31) {
+      numberedDayListItem.classList.add('holiday');
+    } else if (
+      numberedDay === 4 ||
+      numberedDay === 11 ||
+      numberedDay === 18 ||
+      numberedDay === 25
+    ) {
+      numberedDayListItem.classList.add('friday');
+    }
+    unorderedDays.appendChild(numberedDayListItem);
   }
-  unorderedDays.appendChild(numberedDayListItem);
 }
+
+createDaysOfTheMonth();
 
 function createButton(nomeBotão) {
   const buttonContainer = document.querySelector('.buttons-container');
@@ -56,3 +60,21 @@ function createButton(nomeBotão) {
 }
 
 createButton('Feriados');
+
+function changeBackgroundColorHolidays() {
+  const holidayButton = document.getElementById('btn-holiday');
+  const holidays = document.querySelectorAll('.holiday');
+  const originalBackgroundColor = 'rgb(238,238,238)';
+
+  holidayButton.addEventListener('click', function () {
+    for (let i = 0; i < holidays.length; i++) {
+      if (holidays[i].style.backgroundColor !== 'white') {
+        holidays[i].style.backgroundColor = 'white';
+      } else {
+        holidays[i].style.backgroundColor = originalBackgroundColor;
+      }
+    }
+  });
+}
+
+changeBackgroundColorHolidays();
