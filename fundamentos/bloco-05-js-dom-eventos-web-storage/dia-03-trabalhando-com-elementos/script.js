@@ -32,7 +32,17 @@ const unorderedDays = document.getElementById('days');
 for (let i = 0; i < decemberDaysList.length; i++) {
   const numberedDay = decemberDaysList[i];
   const numberedDayListItem = document.createElement('li');
-  numberedDayListItem.className = 'day';
+  numberedDayListItem.classList.add('day');
   numberedDayListItem.innerText = numberedDay;
+  if (numberedDay === 24 || numberedDay === 25 || numberedDay === 31) {
+    numberedDayListItem.classList.add('holiday');
+  } else if (
+    numberedDay === 4 ||
+    numberedDay === 11 ||
+    numberedDay === 18 ||
+    numberedDay === 25
+  ) {
+    numberedDayListItem.classList.add('friday');
+  }
   unorderedDays.appendChild(numberedDayListItem);
 }
