@@ -35,15 +35,12 @@ function createDaysOfTheMonth() {
     const numberedDayListItem = document.createElement('li');
     numberedDayListItem.classList.add('day');
     numberedDayListItem.innerText = numberedDay;
-    if (numberedDay === 24 || numberedDay === 25 || numberedDay === 31) {
+    if (numberedDay === 24 || numberedDay === 31) {
       numberedDayListItem.classList.add('holiday');
-    } else if (
-      numberedDay === 4 ||
-      numberedDay === 11 ||
-      numberedDay === 18 ||
-      numberedDay === 25
-    ) {
+    } else if (numberedDay === 4 || numberedDay === 11 || numberedDay === 18) {
       numberedDayListItem.classList.add('friday');
+    } else if (numberedDay === 25) {
+      numberedDayListItem.className = 'day holiday friday';
     }
     unorderedDays.appendChild(numberedDayListItem);
   }
@@ -88,3 +85,21 @@ function createFridayButton(nomeBotão) {
 }
 
 createFridayButton('Sexta-feira');
+
+function changeFridaysText(decemberFridays) {
+  const fridayButton = document.getElementById('btn-friday');
+  const fridays = document.querySelectorAll('.friday');
+  console.log(fridays);
+  const newText = 'SEXTOU o/';
+  fridayButton.addEventListener('click', function () {
+    for (let i = 0; i < fridays.length; i++) {
+      if (fridays[i].innerText !== newText) {
+        fridays[i].innerText = newText;
+      } else {
+        fridays[i].innerText = decemberFridays[i];
+      }
+    }
+  });
+}
+
+changeFridaysText([4, 11, 18, 25]);
