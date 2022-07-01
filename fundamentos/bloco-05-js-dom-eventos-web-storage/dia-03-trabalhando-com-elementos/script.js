@@ -89,7 +89,6 @@ createFridayButton('Sexta-feira');
 function changeFridaysText(decemberFridays) {
   const fridayButton = document.getElementById('btn-friday');
   const fridays = document.querySelectorAll('.friday');
-  console.log(fridays);
   const newText = 'SEXTOU o/';
   fridayButton.addEventListener('click', function () {
     for (let i = 0; i < fridays.length; i++) {
