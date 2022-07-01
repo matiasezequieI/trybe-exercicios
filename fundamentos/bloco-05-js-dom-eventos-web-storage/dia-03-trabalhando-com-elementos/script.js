@@ -78,3 +78,13 @@ function changeBackgroundColorHolidays() {
 }
 
 changeBackgroundColorHolidays();
+
+function createFridayButton(nomeBotão) {
+  const buttonContainer = document.querySelector('.buttons-container');
+  const button = document.createElement('button');
+  button.id = 'btn-friday';
+  button.innerText = nomeBotão;
+  buttonContainer.appendChild(button);
+}
+
+createFridayButton('Sexta-feira');
