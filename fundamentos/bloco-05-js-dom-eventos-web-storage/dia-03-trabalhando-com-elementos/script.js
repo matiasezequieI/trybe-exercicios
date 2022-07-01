@@ -46,3 +46,13 @@ for (let i = 0; i < decemberDaysList.length; i++) {
   }
   unorderedDays.appendChild(numberedDayListItem);
 }
+
+function createButton(nomeBotão) {
+  const buttonContainer = document.querySelector('.buttons-container');
+  const button = document.createElement('button');
+  button.id = 'btn-holiday';
+  button.innerText = nomeBotão;
+  buttonContainer.appendChild(button);
+}
+
+createButton('Feriados');
