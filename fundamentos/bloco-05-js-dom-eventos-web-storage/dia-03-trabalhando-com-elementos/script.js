@@ -121,5 +121,18 @@ function zoomOut() {
   }
 }
 
+const listTasks = document.querySelector('.my-tasks');
+const submitNewTask = document.getElementById('btn-add');
+
+function addTask() {
+  submitNewTask.addEventListener('click', function () {
+    const task = document.getElementById('task-input').value;
+    const newTask = document.createElement('span');
+    newTask.innerText = task;
+    listTasks.appendChild(newTask);
+  });
+}
+
+addTask();
 zoomIn();
 zoomOut();
