@@ -101,4 +101,25 @@ function changeFridaysText(decemberFridays) {
   });
 }
 
+const days = document.querySelectorAll('.day');
+
 changeFridaysText([4, 11, 18, 25]);
+
+function zoomIn() {
+  for (let day of days) {
+    day.addEventListener('mouseenter', function (event) {
+      event.target.style.fontSize = '30px';
+    });
+  }
+}
+
+function zoomOut() {
+  for (let day of days) {
+    day.addEventListener('mouseleave', function (event) {
+      event.target.style.fontSize = '20px';
+    });
+  }
+}
+
+zoomIn();
+zoomOut();
