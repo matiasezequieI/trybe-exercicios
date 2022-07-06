@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Header da Página</h1>
+    </header>
+    <main>
+      <form action="post">
+        <fieldset>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            minlength="10"
+            maxlength="40"
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            minlength="10"
+            maxlength="50"
+          />
+          <span id="titulo-lugar-favorito">Lugar favorito: </span>
+          <input
+            type="radio"
+            name="lugar-favorito"
+            id="cidade"
+            value="cidade"
+          />
+          <label for="cidade">Cidade</label>
+          <input type="radio" name="lugar-favorito" id="campo" value="campo" />
+          <label for="campo">Campo</label>
+          <input type="radio" name="lugar-favorito" id="praia" value="praia" />
+          <label for="praia">Praia</label>
+          <input
+            type="radio"
+            name="lugar-favorito"
+            id="montanhas"
+            value="montanhas"
+          />
+          <label for="montanhas">Montanhas</label>
+          <label for="area-resposta" id="header-resposta"
+            >Por que você deveria ser a pessoa desenvolvedora a ganhar o
+            concurso TrybeTrip?</label
+          >
+          <textarea
+            name=""
+            id="area-resposta"
+            cols="30"
+            rows="10"
+            maxlength="500"
+          ></textarea>
+          <label for="data-preferencial"
+            >Qual a melhor data para realizar sua viagem?</label
+          >
+          <input type="date" name="data" id="data-preferencial" />
+          <span id="area-novidades"
+            >Gostaria de receber outras incríveis oportunidades oferecidas pela
+            Trybe?</span
+          >
+          <input type="radio" id="novidades-sim" name="novidades" value="sim" />
+          <label for="novidades-sim">Sim</label>
+          <input type="radio" id="novidades-nao" name="novidades" value="nao" />
+          <label for="novidades-sim">Não</label>
+          <span id="area-divulgacao"
+            >Concordo que imagens das minhas férias poderão ser usadas na
+            divulgação de concursos futuros</span
+          >
+          <input
+            type="radio"
+            id="divulgacao-sim"
+            name="divulgacao"
+            value="sim"
+          />
+          <label class="divulgacao-sim" for="divulgacao-sim">Sim</label>
+          <input
+            type="radio"
+            id="divulgacao-nao"
+            name="divulgacao"
+            value="nao"
+          />
+          <label class="divulgacao-nao" for="divulgacao-sim">Não</label>
+          <div class="buttons">
+            <button type="submit">Enviar</button>
+            <button type="submit">Limpar</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

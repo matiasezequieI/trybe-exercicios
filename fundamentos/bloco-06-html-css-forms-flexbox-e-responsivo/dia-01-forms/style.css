@@ -1,0 +1,31 @@
+#title {
+  color: gray;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#nome,
+#email,
+#header-resposta,
+#area-resposta,
+#area-novidades,
+#area-divulgacao {
+  display: block;
+}
+
+.buttons {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#header-resposta {
+  margin-bottom: 5px;
+}
+
+#nome,
+#email,
+#area-resposta,
+#montanhas,
+#data-preferencial {
+  margin-bottom: 20px;
+}
