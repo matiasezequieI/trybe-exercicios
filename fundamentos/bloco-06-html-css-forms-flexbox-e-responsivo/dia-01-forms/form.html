@@ -71,7 +71,7 @@
           <input type="radio" id="novidades-sim" name="novidades" value="sim" />
           <label for="novidades-sim">Sim</label>
           <input type="radio" id="novidades-nao" name="novidades" value="nao" />
-          <label for="novidades-sim">Não</label>
+          <label for="novidades-nao">Não</label>
           <span id="area-divulgacao"
             >Concordo que imagens das minhas férias poderão ser usadas na
             divulgação de concursos futuros</span
@@ -89,12 +89,12 @@
             name="divulgacao"
             value="nao"
           />
-          <label class="divulgacao-nao" for="divulgacao-sim">Não</label>
-          <div class="buttons">
-            <button type="submit">Enviar</button>
-            <button type="submit">Limpar</button>
-          </div>
+          <label class="divulgacao-nao" for="divulgacao-nao">Não</label>
         </fieldset>
+        <div class="buttons">
+          <button id="btn-enviar" type="submit">Enviar</button>
+          <button id="btn-limpar">Limpar</button>
+        </div>
       </form>
     </main>
     <script src="script.js"></script>
