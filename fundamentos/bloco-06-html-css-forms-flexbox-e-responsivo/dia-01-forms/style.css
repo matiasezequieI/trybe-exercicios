@@ -28,3 +28,17 @@
 #data-preferencial {
   margin-bottom: 20px;
 }
+
+#btn-enviar,
+#btn-limpar {
+  width: 100px;
+  padding: 5px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+#novidades-sim {
+  margin-bottom: 15px;
+}
