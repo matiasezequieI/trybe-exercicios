@@ -5,3 +5,8 @@ const form = document.querySelector('form');
 btnEnviar.addEventListener('click', function (event) {
   event.preventDefault();
 });
+
+btnLimpar.addEventListener('click', function (event) {
+  event.preventDefault();
+  form.reset();
+});
