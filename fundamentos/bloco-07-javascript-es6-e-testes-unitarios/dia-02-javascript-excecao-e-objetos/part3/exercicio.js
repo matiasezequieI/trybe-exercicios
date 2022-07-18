@@ -58,3 +58,17 @@ console.log(sumTotalStudens(allLessons));
 //exercicio7
 const getValueByNumber = (objeto, numero) => Object.values(objeto)[numero];
 console.log(getValueByNumber(lesson1, 1));
+
+//exercicio8
+const verifyPair = (objeto, chave, valor) => {
+  const array = Object.entries(objeto);
+  let find = false;
+  for (let index in array) {
+    if (array[index][0] === chave && array[index][1] === valor) {
+      find = true;
+    }
+  }
+  return find;
+};
+
+console.log(verifyPair(lesson2, 'professor', 'Carlos'));
