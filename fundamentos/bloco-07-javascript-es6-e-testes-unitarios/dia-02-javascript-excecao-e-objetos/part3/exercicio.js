@@ -54,3 +54,7 @@ const sumTotalStudens = (objeto) => {
 };
 
 console.log(sumTotalStudens(allLessons));
+
+//exercicio7
+const getValueByNumber = (objeto, numero) => Object.values(objeto)[numero];
+console.log(getValueByNumber(lesson1, 1));
