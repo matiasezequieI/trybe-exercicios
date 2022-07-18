@@ -25,3 +25,7 @@ const updateLesson2 = (objeto, chave, valor) => {
 
 updateLesson2(lesson2, 'turno', 'noite');
 console.log(lesson2);
+
+//exercicio2
+const listKeys = (obj) => Object.keys(obj);
+console.log(listKeys(lesson1));
