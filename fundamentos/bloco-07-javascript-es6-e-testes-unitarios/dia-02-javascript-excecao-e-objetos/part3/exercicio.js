@@ -33,3 +33,7 @@ console.log(listKeys(lesson1));
 //exericio3
 const sizeOfObject = (objeto) => Object.keys(objeto).length;
 console.log(sizeOfObject(lesson3));
+
+//exericio4
+const valuesOfObject = (objeto) => Object.values(objeto);
+console.log(valuesOfObject(lesson3));
