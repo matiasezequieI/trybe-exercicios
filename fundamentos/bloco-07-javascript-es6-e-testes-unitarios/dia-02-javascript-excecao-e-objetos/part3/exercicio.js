@@ -38,6 +38,19 @@ console.log(sizeOfObject(lesson3));
 const valuesOfObject = (objeto) => Object.values(objeto);
 console.log(valuesOfObject(lesson3));
 
+//exercicio5
 const allLessons = Object.assign({}, { lesson1 }, { lesson2 }, { lesson3 });
-
 console.log(allLessons);
+
+//exericio6
+const sumTotalStudens = (objeto) => {
+  let total = 0;
+  const array = Object.keys(allLessons);
+
+  for (index in array) {
+    total += objeto[array[index]].numeroEstudantes;
+  }
+  return total;
+};
+
+console.log(sumTotalStudens(allLessons));
